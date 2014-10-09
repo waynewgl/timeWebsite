@@ -1,0 +1,165 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>MobileApp Website Template | Home :: w3layouts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript">
+      jQuery(document).ready(function($) {
+          $(".scroll").click(function(event){
+              event.preventDefault();
+              $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+          });
+      });
+  </script>
+  <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+  <script type="text/javascript" src="./js/slick.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('.single-item').slick({
+              dots: true,
+              infinite: true,
+              speed: 300,
+              autoplay:true,
+              arrows:false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+          });
+      });
+  </script>
+</head>
+<body>
+<div class="header">
+  <div class="header-top">
+    <div class="wrap">
+      <div class="logo">
+        <a href="index.html"> <%= image_tag("icon_main_time.png") %> </a>
+      </div>
+      <div class="cssmenu">
+        <ul id="nav">
+          <li class="current"><a href="#section-1" class="scroll" >主页</a></li>
+          <li><a href="#section-2" class="scroll">功能介绍</a></li>
+          <li><a href="#section-5" class="scroll">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="header-bottom" id="section-1">
+    <div class="wrap">
+      <div class="img-banner">
+        <div class="img-banner-info">
+          <h1><span>时光胶囊&偶遇</span></h1>
+          <h3>埋下你的珍贵回忆, 偶遇路上的人们</h3>
+          <div class="app-btn"><a href="#" style="background-color: lightskyblue">前往苹果商店下载</a></div>
+        </div>
+        <div class="img-banner-pic">
+          <%= image_tag("mobile2.png") %>
+        </div>
+        <div class="clear"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <!-- Features -->
+  <div class="features" id="section-2">
+    <div class="wrap">
+      <h2>应用功能</h2>
+      <p>时光胶囊&偶遇是一款提供用户另类体验感的互动性APP</p>
+      <div class="features-list">
+        <div class="col_1_of_3 span_1_of_3">
+          <div class="dc-head">
+            <div class="dc-head-icon">
+              <%= image_tag("feature2.png") %>
+            </div>
+            <div class="dc-head-info">
+              <h3>时光胶囊</h3>
+              <p>用户可以通过随时记录某一刻值得回忆的事情， 并留在当前位置， 只有路过此处，或者停留在此处的人们能够发现并且进行留言</p>
+            </div>
+            <div class="clear"> </div>
+          </div>
+        </div>
+        <div class="col_1_of_3 span_1_of_3">
+          <div class="dc-head">
+            <div class="dc-head-icon">
+              <%= image_tag("feature1.png") %>
+            </div>
+            <div class="dc-head-info">
+              <h3>偶遇的人们</h3>
+              <p>用户们一旦在某一天同一时刻出现在用一个地方， 本应用将会自动添加互相为好友</p>
+            </div>
+            <div class="clear"> </div>
+          </div>
+        </div>
+        <div class="col_1_of_3 span_1_of_3">
+          <div class="dc-head">
+            <div class="dc-head-icon">
+              <%= image_tag("feature3.png") %>
+            </div>
+            <div class="dc-head-info">
+              <h3>个人中心</h3>
+              <p>可以进行资料编辑， 查看所有用户自己埋下的时光胶囊，所有留言将会有通知提示</p>
+            </div>
+            <div class="clear"> </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!--&lt;!&ndash; Download Button  &ndash;&gt;-->
+  <!--<div class="content-middle" id="section-3">-->
+    <!--<div class="wrap">-->
+      <!--<div class="download-desc">-->
+        <!--<h2><span>Hocolate</span> pudding dessert jelly <span>fruit cake tart jelly wa</span>fer. </h2>-->
+        <!--<p>Donut cupcake lemon drops dragée liquorice apple pie powder. Topping sweet lollipop soufflé chocolate liquorice candy canes.</p>-->
+        <!--<div class="download-button"><a href="#">Download</a></div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!-- Testimonials -->
+  <div class="testimonials" id="section-4">
+    <div class="wrap">
+      <div class="slider single-item">
+        <div>
+          <p>"在一个充满回忆的地方留下自己的一段话，一张照片，故地重游时显得尤其珍贵"</p>
+          <h3>留下你的往日回忆的印记</h3>
+        </div>
+        <div>
+          <p>"喧嚣的城市，宁静的乡村，给匆匆路过的你们留下一个回眸"</p>
+          <h3>偶遇的人们</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Main -->
+
+<!-- Footer -->
+<div class="footer" id="section-5">
+    <div class="footer-bottom">
+    <div class="copy">
+      <p> © 版权所有 2014 eHome Tech studio / waynewgl@gmail.com</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<a href="#" id="toTop"> <span id="toTopHover"></span> </a>
+</body>
+</html>
+
+    	
+    	
+            
